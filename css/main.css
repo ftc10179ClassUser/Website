@@ -1,7 +1,7 @@
 .header {
 	border-bottom: 2px solid black;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 35%;
+	margin-right: 35%;
 	text-align: center;
 }
 
@@ -12,4 +12,8 @@ body {
 
 html {
 	background-color: teal;
+}
+
+article {
+	margin: 30px;
 }
