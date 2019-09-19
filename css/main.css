@@ -1,19 +1,22 @@
 .header {
-	border-bottom: 2px solid black;
-	margin-left: 35%;
-	margin-right: 35%;
 	text-align: center;
+	border-bottom: 2px solid black;
 }
 
 body {
-	border: 2px solid black;
-	background-color: white;
+	font-size: 45px;
+	margin: 0px;
+	background-color: lightyellow;
 }
 
-html {
-	background-color: teal;
+.section {
+	background-position: center;
+	background-size: cover;
+	padding: 60px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
-article {
-	margin: 30px;
+.section * {
+	/*position: fixed;
 }
