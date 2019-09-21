@@ -1,12 +1,52 @@
+@font-face {
+	font-family: 'KreditBack-Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('KreditBack-Regular'), url('../fonts/kredit back.woff') format('woff');
+}
+
 .header {
+	font-family: 'KreditBack-Regular', sans-serif;
 	text-align: center;
-	font-family: 'Lato';
+	background-color: rgba(255, 255, 255, 0.83);
+	padding-top: 150px;
+}
+
+h1 {
+	margin: 0px;
+	margin-bottom: 150px;
+}
+
+html {
+	padding: 0px;
 }
 
 body {
-	font-size: 45px;
+	font-size: 40px;
 	margin: 0px;
-	background-color: lightyellow;
+}
+
+nav {
+	display: flex;
+}
+
+nav a {
+	border-top: 2px solid black;
+	font-family: 'Quicksand', sans-serif;
+	border-right: 2px solid black;
+	width: 100%;
+	padding: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+nav a:last-child {
+	border-right: none;
+}
+
+.section h2 {
+	text-align: center;
+	font-family: 'KreditBack-Regular', sans-serif;
 }
 
 .section {
@@ -15,8 +55,8 @@ body {
 	position: relative;
 	background-position: center;
 	background-size: cover;
-	padding: 60px;
-	font-family: 'Roboto';
+	padding: 130px;
+	font-family: 'Be Vietnam', sans-serif;
 }
 
 .section::before {
@@ -27,7 +67,7 @@ body {
 	width: calc(100% - 100px);
 	height: calc(100% - 100px);
 	z-index: -1;
-	background-color: rgba(255,251,213,75%);
+	background-color: rgba(255, 255, 255, 0.83);
 }
 
 .img1::after {
@@ -71,4 +111,19 @@ body {
 .removeAfter::after {
 	content: "";
 	display: none;
+}
+
+.here {
+	background-color: lightyellow;
+}
+
+.concise {
+	margin: 0px;
+	padding: 0px;
+	font-size: 60px;
+}
+
+nav.concise * {
+	padding: 0px;
+	font-size: 40px;
 }
