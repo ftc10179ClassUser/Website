@@ -1,6 +1,6 @@
 .header {
 	text-align: center;
-	border-bottom: 2px solid black;
+	font-family: 'Lato';
 }
 
 body {
@@ -10,14 +10,65 @@ body {
 }
 
 .section {
+	border-top: 2px solid black;
+	z-index: -2;
+	position: relative;
 	background-position: center;
 	background-size: cover;
-	padding: 50px;
+	padding: 60px;
+	font-family: 'Roboto';
 }
 
-.inner {
-	padding: 10px;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
-	background-color: white;
+.section::before {
+	content: "";
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: calc(100% - 100px);
+	height: calc(100% - 100px);
+	z-index: -1;
+	background-color: rgba(255,251,213,75%);
+}
+
+.img1::after {
+	z-index: -4;
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	content: "";
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/program_team_lowresbg.jpg');
+}
+
+.img1 {
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/program_team_bg.jpg');
+}
+
+.img2::after {
+	z-index: -4;
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	content: "";
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/build_team_lowresbg.jpg');
+}
+
+.img2 {
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/build_team_bg.jpg');
+}
+
+.removeAfter::after {
+	content: "";
+	display: none;
 }
