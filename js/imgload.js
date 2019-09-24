@@ -1,8 +1,10 @@
 window.addEventListener("load", function() {
-	let sections = document.getElementsByClassName("section");
-	for (let i = 0; i < sections.length; i++) {
-		imageLoaded(sections[i])
-	}
+	setTimeout(function() {
+		let sections = document.getElementsByClassName("section");
+		for (let i = 0; i < sections.length; i++) {
+			imageLoaded(sections[i])
+		}
+	}, 10000);
 });
 
 function imageLoaded(element) {
