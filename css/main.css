@@ -165,3 +165,10 @@ nav.concise * {
 	padding: 0px;
 	font-size: 40px;
 }
+.footer {
+	border-top: 2px solid black;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	padding: 30px;
+	padding-left: 35%;
+}
